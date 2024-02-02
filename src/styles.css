@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Newake';
+  src: url('../public/Newake-Font-Demo.otf') format('opentype');
+}
+
+:root {
+  --ethos-sand: #f0e3cc;
+  --ethos-daphne: #27341f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(39, 52, 31);
+  background: linear-gradient(180deg, rgba(39, 52, 31, 1) 0%, rgba(104, 109, 87, 1) 55%, rgba(240, 227, 204, 1) 65%, rgba(240, 227, 204, 1) 80%);
+  background-image: url('../public/bg.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* #bg-main {
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+} */
+
+/* body::before {
+  content: "''";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/bg.jpg');
+  background-size: 100% 100vh;
+  background-position-x: center;
+  z-index: 0;
+  /* filter: blur(3px); */
+/* } */
+
+.content {
+  z-index: 10;
+  width: 100%;
+  padding-top: 75px;
+}
+
+.content main {
+  max-width: 47%;
+  margin: 0 auto;
+}
+
+.time-to-admit {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: var(--ethos-sand);
+  text-align: center;
+}
+
+.reputation-matters {
+  font-family: 'Newake', sans-serif;
+  font-size: 6vw;
+  color: var(--ethos-sand);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+img {
+  display: block;
+  width: 26vw;
+  height: auto;
+  margin: auto;
+}
+
+.catch-line {
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
+  font-size: 2.5vw;
+  color: var(--ethos-daphne);
+  text-align: center;
+}
+
+.details {
+  columns: 2;
+  margin-top: 20px;
+}
+
+.details p {
+  margin-top: 0;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.waitlist-btn {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.waitlist-btn a {
+  display: inline-block;
+  background-color: var(--ethos-daphne);
+  color: var(--ethos-sand);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 230px;
+}
+
+footer {
+  padding: 24px 0 32px;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.social img {
+  height: 24px;
+  width: auto;
+}
