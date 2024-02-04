@@ -63,6 +63,7 @@ img {
 
 .details {
   columns: 2;
+  column-gap: 30px;
   margin-top: 20px;
 }
 
