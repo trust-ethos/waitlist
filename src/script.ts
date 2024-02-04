@@ -7,5 +7,5 @@ amplitude.init(apiKey, {
 });
 
 document.getElementById('open-waitlist')?.addEventListener('click', () => {
-  amplitude.track('click-open-waitlist');
+  amplitude.track('button clicked', { button: 'open-waitlist' });
 })
