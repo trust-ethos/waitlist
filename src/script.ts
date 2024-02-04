@@ -7,5 +7,8 @@ amplitude.init(apiKey, {
 });
 
 document.getElementById('open-waitlist')?.addEventListener('click', () => {
-  amplitude.track('button clicked', { button: 'open-waitlist' });
+  amplitude.track('button clicked', {
+    button: 'open-waitlist',
+    '[Amplitude] Page Domain': window.location.hostname,
+  });
 })
